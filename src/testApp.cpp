@@ -3,6 +3,11 @@
 int CircleX;// instantiating variables, where it will start and where it will go to
 int CircleY;
 int CircleRadius;
+float DropSpeed; //change speed of circle drop
+
+//int l =  (height - y);
+
+//height- y-axis = limit
 
 //--------------------------------------------------------------
 void testApp::setup(){
@@ -10,11 +15,16 @@ void testApp::setup(){
     CircleX =300;
     CircleY=200;
     CircleRadius=25;
+    DropSpeed=5; //the basic speed to start with 
+    
+    ofSetVerticalSync(true); //prevents screen tearings
 
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
+    
+  
     
     
 
@@ -54,6 +64,9 @@ void testApp::mouseDragged(int x, int y, int button){
 //--------------------------------------------------------------
 void testApp::mousePressed(int x, int y, int button){
     //CircleRadius++; //everytime you press mouse, the radius gets +1 bigger
+    
+  
+    
     
 
 }
